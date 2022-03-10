@@ -17,7 +17,7 @@ function toDoAdd() {
             </div>
         </div>`;
 
-        let actionArea = document.getElementById("input-area");
+        let actionArea = document.getElementById("list-toDo");
         actionArea.insertAdjacentHTML("Beforeend", styles);
         i++;
 
@@ -31,7 +31,7 @@ function checkList(action) {
 }
 
 function removeAll() {
-    var removeA = document.getElementById("action");
+    var removeA = document.getElementById("list-toDo");
     if (removeA) {
         removeA.remove();
     }
