@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Roboto:wght@100&display=swap');
+*{
+    box-sizing: border-box;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif; 
+}
+
+body{
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("Img/pexels-valdemaras-d-1647962.jpg");
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.input-area{
+    width: 65%;
+    height: auto;
+    min-height: 300px;
+    margin-bottom: 4%;
+    background-color: rgb(0, 0, 0, 0.1);
+    backdrop-filter: saturate(100%) blur(10px);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.txt{
+    width: 40%;
+    height: 40px;
+    border: 0;
+    background-color: transparent;
+    font-size: 18px;
+    border-bottom: 2px solid rgba(92, 92, 92, 0.466);
+    padding: 17px 13px 0 13px;
+    transition: 0.7s all cubic-bezier(0.14, 0.6, 1, 0.99);
+}
+
+.txt:focus{
+    border-bottom: 2px solid rgb(39, 39, 39);
+}
+
+.btn{
+    height: 40px;
+    width: 10%;
+    border: 0;
+    color: rgba(0, 0, 0, 0.7);
+    background-color: transparent;
+    border: 2px solid rgba(92, 92, 92, 0.466);
+    font-size: 18px;
+    position: relative;
+    left: 20px;
+    transition: 0.4s;
+}
+
+.btn:hover{
+    border: 2px solid rgb(39, 39, 39);
+    color: rgb(39, 39, 39);
+}
+ 
+.action{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(92, 92, 92, 0.466);
+}
+
+.checkbox-area{
+    width: 5%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.checkbox-area input[type="checkbox"]{
+    color: currentColor;
+    width: 2.15em;
+    height: 2.15em;
+    opacity: 0.7;
+}
+
+.checkbox-area input:checked{
+    opacity: 1;
+}
+
+.checkbox-area .as{
+    background-color: red;
+}
+
+.action-list{
+    width: 95%;
+    height: 60px;
+    background-color: transparent;
+    padding: 5px 0 10px 10px;
+    line-height: 22px;
+    display: block;
+}
+
+.action-list h3{
+    color: rgb(39, 39, 39);
+}
+
+.description{
+    color: rgba(0, 0, 0, 0.753);
+    font-family: 'Quicksand', sans-serif;
+}
